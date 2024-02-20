@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de Fotos Animado</title>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 600px);
+            grid-gap: 45px;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 1s ease;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(51, 49, 49, 0);
+            opacity: 0;
+            transition: opacity 1s ease;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            color: #fff;
+            text-align: center;
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border: 5px solid transparent;
+            transition: border-color 1s ease;
+        }
+
+        .grid-item:hover {
+            border-color: #ff03c8;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif font-size: 50pt;
+            color:white;
+            text-shadow:1px 1px 1px white;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body style="background-color: rgb(14, 14, 14);"></body>
+    <h1 style="text-align: center;"> Um pouco do Summer 2024!</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="css/Meninas.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/Trio japa.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/nick barriga.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/barriga grupo.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/Lari solo.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/Sombra.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/Beca raquel.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/Gabi beca .JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/Thiago beca.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/Beca jorge.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/Gabi mafe.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/larissa raquel.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/beca larrisa.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/Time.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/casal.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/Beca.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/FESTa.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/Festa2.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/Gabi.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/gabriella.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/Jorge.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/União.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/Filipe.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/Raquek.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/Larissa.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/japa.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/nego.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/Rapha.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="css/Rita.JPG">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <div class="grid-item">
+                        <img src="css/grupo.JPG">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
